@@ -42,13 +42,16 @@ class LoginView extends StatelessWidget {
                   ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(content: Text("Email cannot be empty.")));
                   return;
-                }if (pwdController.text.isEmpty) {
+                }
+                if (pwdController.text.isEmpty) {
                   ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(content: Text("Password cannot be empty.")));
                   return;
-                }if (pwdController.text.length < 6) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text("Password should be 6 or more characters")));
+                }
+                if (pwdController.text.length < 6) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content:
+                          Text("Password should be 6 or more characters")));
                   return;
                 }
               },
