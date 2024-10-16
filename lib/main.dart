@@ -1,3 +1,4 @@
+import 'package:aftab_fu_project/dynamic_list_view.dart';
 import 'package:aftab_fu_project/image_demo.dart';
 import 'package:aftab_fu_project/list_view_demo.dart';
 import 'package:aftab_fu_project/login.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MultipleSelectionListViewDemo(),
+      home: DynamicListView(),
     );
   }
 }
