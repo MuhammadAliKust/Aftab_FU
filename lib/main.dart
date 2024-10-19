@@ -3,6 +3,7 @@ import 'package:aftab_fu_project/image_demo.dart';
 import 'package:aftab_fu_project/list_view_demo.dart';
 import 'package:aftab_fu_project/login.dart';
 import 'package:aftab_fu_project/multiple_selection_demo.dart';
+import 'package:aftab_fu_project/on_boarding_view.dart';
 import 'package:aftab_fu_project/single_list_view.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DynamicListView(),
+      home: OnBoardingView(),
     );
   }
 }
