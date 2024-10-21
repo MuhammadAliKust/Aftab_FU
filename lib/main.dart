@@ -1,3 +1,4 @@
+import 'package:aftab_fu_project/bottom_bar.dart';
 import 'package:aftab_fu_project/dynamic_list_view.dart';
 import 'package:aftab_fu_project/image_demo.dart';
 import 'package:aftab_fu_project/list_view_demo.dart';
@@ -5,6 +6,7 @@ import 'package:aftab_fu_project/login.dart';
 import 'package:aftab_fu_project/multiple_selection_demo.dart';
 import 'package:aftab_fu_project/on_boarding_view.dart';
 import 'package:aftab_fu_project/single_list_view.dart';
+import 'package:aftab_fu_project/tabbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OnBoardingView(),
+      home: TabbarViewDemo(),
     );
   }
 }

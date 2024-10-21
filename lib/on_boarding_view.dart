@@ -45,7 +45,9 @@ class OnBoardingView extends StatelessWidget {
               count: onBoardingList.length,
               effect: ExpandingDotsEffect(), // your preferred effect
               onDotClicked: (index) {}),
-          SizedBox(height: 40,)
+          SizedBox(
+            height: 40,
+          )
         ],
       ),
     );
