@@ -1,33 +1,21 @@
 import 'package:flutter/material.dart';
 
-class ListViewDemo extends StatelessWidget {
-  const ListViewDemo({super.key});
+class GridViewDemo extends StatelessWidget {
+  const GridViewDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("List View Demo"),
+        title: Text("Grid View Demo"),
       ),
-      body: ListView.builder(
-        itemCount: 5,
-        itemBuilder: (context, i) {
-          return ListTile(
-            tileColor: Colors.blue,
-            leading: Icon(Icons.notifications),
-            title: Text("Notification Title"),
-            subtitle: Text("Notification Sub Title"),
-            trailing: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.delete),
-                Icon(Icons.edit),
-                Icon(Icons.edit),
-              ],
-            ),
-          );
-        },
-      ),
+      body: GridView.builder(
+        itemCount: 10,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 5, crossAxisSpacing: 40, mainAxisSpacing: 30),
+          itemBuilder: (context, i) {
+            return FlutterLogo();
+          }),
     );
   }
 }
