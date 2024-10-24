@@ -1,4 +1,5 @@
 import 'package:aftab_fu_project/bottom_bar.dart';
+import 'package:aftab_fu_project/bottom_sheet.dart';
 import 'package:aftab_fu_project/dialog_box.dart';
 import 'package:aftab_fu_project/dynamic_list_view.dart';
 import 'package:aftab_fu_project/image_demo.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DialogBoxView(),
+      home: BottomSheetView(),
     );
   }
 }
